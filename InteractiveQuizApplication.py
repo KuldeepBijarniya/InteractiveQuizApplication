@@ -511,8 +511,10 @@ class QuizApp: # QuizApp class
         exit()
 
     def send_email(self, recipient, subject, body):
-        sender_email = "mllenahih@gmail.com"
-        sender_password = "onisomurpvnalwbb"
+        sender_email = "youremail@gmail.com"
+        # how to get app password for gmail account
+        # https://support.google.com/accounts/answer/185833?hl=en
+        sender_password = "yourapppassword"
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login(sender_email, sender_password)
